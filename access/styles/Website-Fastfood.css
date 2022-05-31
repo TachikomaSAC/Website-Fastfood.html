@@ -1,0 +1,340 @@
+
+    .entirety
+    {
+        background-image: url("../img/background.jpg");
+    }
+    .grid-container
+    {
+    background-color: white;
+        margin:auto;
+        display: grid;
+        grid-template-rows: 248px 529px 600px 224px ;
+    width:924px;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+
+
+    }
+
+    body { 
+        font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+    }
+    .header
+    {
+        grid-column: 1/-1;
+        display:grid;
+        height:250px;
+        grid-template-rows: 45px 152px 50px 50px;
+    }
+    .info
+    {
+        grid-column:1/-1;
+        background: #fafafa;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1px solid #f2f2f2;
+        display: flex;
+        width:923px;
+    }
+    .info_left
+    {
+        width: 364px;
+        
+    }
+    .head_link
+    {
+        font-size: 13px;
+        border-right: 1px solid #ddd;
+        padding-left: 9px;
+        padding-right: 15px;
+        cursor: pointer;
+        color: red;
+    }
+    .info_right
+    {
+    width:278px;
+    }
+    .empty1
+    {
+        width:280px;
+    }
+    .mail_head
+    {
+        border:none;
+    }
+    .carousel-item img
+    {
+        height:531px;
+    }
+
+
+
+
+    .fastfood-production
+    {
+        grid-column: 1/-1;
+        display:grid;
+        height:600px;
+        background-color: #ff6666;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 292px 308px ;
+    }
+    .fix
+    {
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    }
+    .fix img
+    {
+        height:154px;
+    }
+
+    .card1
+    {
+        grid-column: 1/1;
+    }
+    .card2
+    {
+        grid-column: 2/-3;
+    }
+    .card3
+    {
+        grid-column: 3/-2;
+    }
+    .card4
+    {
+        grid-column: 3/1;
+    }
+
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background:rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        /* display: flex; */
+        display: none;
+    }
+
+    .modal.open {
+        display: flex;
+    }
+
+    /* Chuyển động của modal */
+    @keyframes animationModal {
+        from {
+            opacity: 0;
+            transform: translateY(-150px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .modal-conteiner {
+        width: 900px;
+        max-width: calc(100% - 32px);
+        min-height: 200px;
+        background-color: #fff;
+        position: relative;
+        animation: animationModal ease .5s;
+    }
+
+    .modal-head {
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: #fff;
+        background-color: #009688;
+    }
+
+    .modal-bag {
+        margin-right: 16px;
+    } 
+
+    .modal-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 16px;
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .modal-close:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    .modal-body {
+        padding: 16px;
+    }
+
+    .modal-label {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .modal-input {
+        border: 1px solid #ccc;
+        font-size: 15px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .modal-ticket {
+        background-color: #009688;
+        width: 100%;
+        padding: 16px 0;
+        font-size: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+
+    .modal-ticket:hover {
+        opacity: 0.7;
+    }
+
+    .modal-footer .modal-help {
+        padding: 16px;
+        text-align: right;
+    }
+
+    .modal-footer .modal-help a {
+        color: #2196F3;
+    }
+    .btn-primary {
+        color: #fff !important;
+        background-color: red !important;
+        border-color: red !important;
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .col-xl-3 {
+        width: 100% !important;
+    }
+.mail-info {
+    display: flex;
+}
+
+
+
+
+/*MEDIA THÊM VÀO */
+.logo-image-amazing
+{
+    height:135px;
+}
+.media-extra
+{
+    display:none;
+}
+
+@media only screen and (max-width: 776px)
+{
+    .entirety{
+width:400px;
+    }
+    .info{
+        display:none;
+    }
+    .header {
+        grid-column: 1/-1;
+        display: grid;
+        height: 250px;
+        width:400px;
+        grid-template-rows: 148px 54px 0px 0px;
+    }
+    .grid-item
+    {
+        grid-template-rows: 107px 54px 0px 0px;
+}
+
+    
+    .grid-container
+    {
+        width:400px;
+       grid-template-rows: 161px 276px 1756px 224px;
+
+    }
+    .logo-image-amazing
+    {
+    height: 100px;
+    }
+    .carousel.pointer-event {
+        width: 400px;
+        height:276px;
+    }
+    .carousel-item img {
+        width:400px !important;
+        height: 276px;
+    }
+    .carousel-control-prev {
+        left: 0px !important;
+    height: 275px
+    }
+    .carousel-control-next{
+        right: 11px;
+        height: 275px;
+    }
+    .fastfood-production {
+        
+        display: block;
+        width:400px;
+            height: 1756px;
+        }
+        
+        .bg-light {
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+            width: 400px;
+        }
+        .mail-info {
+            display: block;
+        }
+        .fix{
+        margin-left: 51px;
+        }
+        .media-extra
+{
+    display: contents;
+}
+.carousel.pointer-event {
+    touch-action: pan-y;
+    z-index: 1;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    z-index: 2;
+    background-color: gainsboro;
+    padding: 5px 5px;
+    font-size: 15px;
+}
+.logo-image-amazing {
+    height: 100px;
+    padding: 0px 121px;
+}
+
+}
